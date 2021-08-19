@@ -1,0 +1,3 @@
+DEPENDS += "openssl"
+
+export OPENSSL_DIR = "${STAGING_EXECPREFIXDIR}"
