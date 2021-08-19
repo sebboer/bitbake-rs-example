@@ -2,6 +2,7 @@ DEPENDS += "openssl"
 
 export OPENSSL_DIR = "${STAGING_EXECPREFIXDIR}"
 
+inherit systemd
 
 SYSTEMD_AUTO_ENABLE = "enable"
 SYSTEMD_SERVICE_\${PN} = "ipinfo.service"
