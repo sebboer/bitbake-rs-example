@@ -7,9 +7,9 @@ inherit cargo
 
 # how to get bitbake-rs-example could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/bitbake-rs-example/0.1.0"
-SRC_URI += "git://github.com/sebboer/bitbake-rs-example;protocol=https;nobranch=1"
+SRC_URI += "git://github.com/sebboer/bitbake-rs-example;protocol=https;nobranch=1;destsuffix=bitbake-rs-example"
 SRCREV = "${AUTOREF}"
-S = "${WORKDIR}/git"
+S = "${WORKDIR}/bitbake-rs-example"
 CARGO_SRC_DIR = ""
 
 
