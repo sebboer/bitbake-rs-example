@@ -1,0 +1,15 @@
+[package]
+name = "bitbake-rs-example"
+version = "0.1.0"
+authors = ["Sebastian Boerakker <sebboer@protonmail.com>"]
+edition = "2018"
+description = "example program to test meta-rust"
+repository = "https://github.com/sebboer/bitbake-rs-example"
+license = "MIT"
+license_file = "LICENSE"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
