@@ -1,0 +1,8 @@
+[Unit]
+Description=Service that runs in background and queries its own ip
+
+[Service]
+ExecStart=/usr/bin/bitbake-rs-example
+
+[Install]
+WantedBy=multi-user.target
